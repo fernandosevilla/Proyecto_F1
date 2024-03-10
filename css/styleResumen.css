@@ -1,0 +1,63 @@
+#año {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    text-align: left;
+    font-size: larger;
+    text-decoration: none;
+}
+
+#año option {
+    font-size: larger;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    margin-bottom: 1%;    
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.pos {
+    width: 5%;
+}
+
+.team {
+    width: 45%;
+}
+
+h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pts {
+    width: 10%;
+}

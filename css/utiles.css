@@ -1,0 +1,41 @@
+/* Inicio de importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); /* Russo One */
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap'); /* Racing Sans One */
+
+/* Fin de importar fuentes */
+
+/* Inicio Variables */
+:root {
+  /* Fondos / Colores de letra */
+  --colorLetraHeaderH1: white;
+  --colorLetraMenu: white;
+  --colorFondoMenu: #e10600;
+  --fondoImagenPilotosHover: rgba(225, 6, 0, 0.4);
+  /* Fuentes de letra */
+  --fuenteMenu: "Bebas Neue", sans-serif;
+  --fuenteLetraTitulo: "Racing Sans One", sans-serif;
+  --fuenteLetraTitulosH2: "Russo One", sans-serif;
+  --fuenteGeneral: sans-serif;
+  /* Sombras */
+  --sombraTarjetas: 10px 8px 10px 8px #888888;
+  --sombraFotosPilotos: 0px 15px 25px rgba(0, 0, 0, 0.781);
+}
+
+/* Fin Variables */
+
+/* Inicio Keyframes */
+@keyframes botonHover {
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+/* Fin Keyframes */
+
+.negrita {
+  font-weight: bold;
+}

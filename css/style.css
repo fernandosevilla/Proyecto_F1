@@ -1,0 +1,361 @@
+/* Se aplica a toda la web lo siguiente */
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuenteGeneral);
+}
+
+/* Clase para los h2 */
+.tituloSecciones {
+    font-family: var(--fuenteLetraTitulosH2);
+    letter-spacing: 0.15rem;
+    margin-top: 1.25rem;
+    margin-left: 2.5%;
+    font-size: 2.188rem;
+    color: black;
+}
+
+.guionTitulo {
+    color: #e10600;
+}
+
+/* Inicio Header & Menu */
+.menu ul {
+    display: flex;
+    background: var(--colorFondoMenu);
+    justify-content: space-around;
+    height: 5%;
+}
+
+.logo {
+    margin-top: 0.8%;
+    padding: 0;
+}
+
+.logo img {
+    height: 4rem;
+    width: auto;
+}
+
+.opcionMenu {
+    font-family: var(--fuenteMenu);
+    padding: 2rem;
+    transition: background 0.4s ease;
+}
+
+.opcionMenu:hover {
+    background: black;
+    cursor: pointer;
+}
+
+.opcionMenu a {
+    font-size: 2.75vh;
+    text-align: center;
+    text-decoration: none;
+    color: var(--colorLetraMenu);
+    transition: color 0.6s ease;
+}
+
+.imagenFondo {
+    display: flex;
+    background: url(../img/fondo.webp);
+    background-size: cover; /* La imagen cubre todo el bloque */
+    background-repeat: no-repeat; /* Hacemos que la imagen deje de repetirse */
+    background-position: center; /* Centramos la imagen en el bloque */
+    height: 102.6vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoHeader {
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+
+.textoHeader h1 {
+    font-family: var(--fuenteLetraTitulo);
+    font-size: 4.375rem;
+    color: var(--colorLetraHeaderH1);
+}
+
+.textoHeader p {
+    font-size: 1.25rem;
+    color: var(--colorLetraParrafo);
+}
+
+/* Fin Header & Menu */
+
+/* Inicio Seccion Noticias */
+
+.bloqueTarjetas {
+    padding: 1.563rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--sombraTarjetas);
+    overflow: hidden;
+    padding: 1.5rem;
+    border: 1px solid black;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.08);
+}
+
+.tarjeta_contenido {
+    text-align: center;
+    padding: 0.125rem;
+    flex-grow: 1;
+}
+
+.tarjeta_contenido img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.625rem; /* separa la imagen del texto */
+}
+
+.tarjeta_contenido h2 {
+    padding-bottom: 0.625rem;
+}
+
+.tarjeta_boton {
+    align-self: center;
+    margin-top: 5%;
+    background: black;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 12px;
+    width: 11.25rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tarjeta_boton a {
+    color: var(--colorLetraMenu);
+    text-decoration: none;
+}
+
+.tarjeta_boton:hover {
+    animation: botonHover 0.3s linear 1;
+}
+
+/* Fin Seccion Noticias */
+
+.bloquePilotosActuales {
+    margin-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.bloquePilotosActuales article {
+    padding: 2%;
+    flex: 0 0 calc(33.33% - 1.25rem);
+    margin: 0.5%;
+    box-sizing: border-box;
+}
+
+.bloquePilotosActuales figure {
+    position:relative;
+    height: 15.625rem;
+    cursor: pointer;
+    width: 21.875rem;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: var(--sombraFotosPilotos);
+}
+
+.bloquePilotosActuales figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.bloquePilotosActuales figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--fondoImagenPilotosHover);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+   text-align: center;
+}
+
+.bloquePilotosActuales figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bloquePilotosActuales figure:hover > .capa h3{
+    margin-top: 4.375rem;
+    margin-bottom: 2.188rem;
+}
+
+.bloquePilotosActuales figure:hover > img{
+    transform: scale(1.3);
+}
+
+.bloquePilotosActuales figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 11.25rem;
+    transition: all 400ms ease-out;
+    margin-top: 1.875rem;
+}
+
+.bloquePilotosActuales figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 21.25rem;
+    margin: auto;
+}
+
+/* Fin Seccion Obras */
+
+/* Inicio Footer */
+.footer-container {
+    background-color: black; /* Cambia el color de fondo según tus preferencias */
+    color: white; /* Cambia el color del texto según tus preferencias */
+    text-align: center;
+    padding: 1.25rem;
+}
+
+#footer {
+    margin-top: 1.25rem; /* Ajusta según tus necesidades */
+}
+
+.bloqueFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cosasFooter {
+    flex: 1;
+    margin: 0.625rem;
+    text-align: center;
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+}
+
+.cosasFooter h4 {
+    color: #fff; /* Cambia el color del título según tus preferencias */
+}
+
+/* Estilos generales para los iconos */
+.cosasFooter a {
+    color: #fff; /* Cambia el color de los enlaces según tus preferencias */
+    margin-right: 0.625rem;
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según tus preferencias */
+    transition: color 0.3s; /* Agrega una transición suave de color */
+}
+
+/* Cambia el color al hacer hover sobre los iconos */
+.cosasFooter a:hover {
+    color: var(--colorFondoMenu); /* Cambia el color al hacer hover según tus preferencias */
+}
+
+
+.cosasFooter p {
+    font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
+}
+
+.cosasFooter span {
+    font-size: 1.2em; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    display: block; /* Hace que el símbolo de copyright aparezca en una nueva línea */
+    margin-top: 0.313rem; /* Puedes ajustar el margen superior según tus preferencias */
+}
+
+/* Fin Footer */
+
+/* Inicio Contacto */
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    animation: botonHover 0.3s linear 1;
+}
+
+/* Fin Contacto */
+
+/* Mediaquerys para pantallas menores a 759px */
+@media screen and (max-width: 759px) {
+    .bloqueTarjetas {
+        grid-template-columns: 1fr; /* Una sola columna para las noticias */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        height: 26rem;
+        text-align: center;
+
+    }
+
+    .opcionMenu {
+        padding: 1rem; /* Ajusta el padding para las opciones del menú */
+    }
+    
+    .bloquePilotosActuales article {
+        flex: 0 0 calc(50% - 1.25rem);
+    }
+
+    input, textarea {
+        width: 80%;
+    }
+
+    .tarjeta:hover {
+        transform: scale(1.04);
+    }
+}
+
