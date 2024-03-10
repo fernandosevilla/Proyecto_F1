@@ -157,7 +157,7 @@ body {
 /* Fin Seccion Noticias */
 
 .bloquePilotosActuales {
-    margin-left: 7%;
+    margin-left: 5.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centra horizontalmente los elementos */
@@ -354,6 +354,10 @@ button:hover {
 
     .tarjeta:hover {
         transform: scale(1.04);
+    }
+
+    .bloquePilotosActuales {
+        margin-left: 0;
     }
 }
 
