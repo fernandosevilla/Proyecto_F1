@@ -2,10 +2,10 @@
     display: block;
     margin: 0 auto;
     width: 30%;
-    padding: 20px;
+    padding: 1%;
     border: 1px solid #cccccc;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    box-shadow: var(--sombraInputResumen);
     text-align: left;
     font-size: larger;
     text-decoration: none;
@@ -27,7 +27,7 @@ table {
 
 th, td {
     border: 1px solid black;
-    padding: 8px;
+    padding: 0.5rem;
     text-align: left;
 }
 
@@ -54,10 +54,16 @@ tr:hover {
 }
 
 h3 {
-    margin-bottom: 20px;
+    margin-bottom: 1%;
     text-align: center;
 }
 
 .pts {
     width: 10%;
+}
+
+@media screen and (max-width: 759px) {
+    #año {
+        width: 60%;
+    }
 }
