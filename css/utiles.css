@@ -1,4 +1,5 @@
 /* Inicio de importar fuentes */
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Bebas Neue */
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); /* Russo One */
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap'); /* Racing Sans One */
@@ -6,12 +7,18 @@
 /* Fin de importar fuentes */
 
 /* Inicio Variables */
+
 :root {
   /* Fondos / Colores de letra */
   --colorLetraHeaderH1: white;
+  --colorLetraPilotos: white;
   --colorLetraMenu: white;
   --colorFondoMenu: #e10600;
   --fondoImagenPilotosHover: rgba(225, 6, 0, 0.4);
+  --colorGuionDeLosTitulos: #e10600;
+  --fondoBotonFormulario: #e10600;
+  --fondoElementosTabla: #f2f2f2;
+  --fondoElementosTablaHover: #ddd;
   /* Fuentes de letra */
   --fuenteMenu: "Bebas Neue", sans-serif;
   --fuenteLetraTitulo: "Racing Sans One", sans-serif;
@@ -20,6 +27,11 @@
   /* Sombras */
   --sombraTarjetas: 10px 8px 10px 8px #888888;
   --sombraFotosPilotos: 0px 15px 25px rgba(0, 0, 0, 0.781);
+  --sombraInputResumen: 0 4px 8px black;
+  /* Transiciones */
+  --transicionPilotos: all 400ms ease-out;
+  /* Animaciones */
+  --animacionBotonHover: botonHover 0.3s linear 1;
 }
 
 /* Fin Variables */
@@ -72,6 +84,18 @@
 
 .otra-animacion {
   animation: zoom 1s ease-in-out forwards;
+}
+
+.tituloSecciones {
+  font-family: var(--fuenteLetraTitulosH2);
+  letter-spacing: 0.15rem;
+  margin-top: 1.25rem;
+  margin-left: 2.5%;
+  font-size: 2.188rem;
+}
+
+.guionTitulo {
+  color: var(--colorGuionDeLosTitulos);
 }
 
 /* Fin Utiles */
