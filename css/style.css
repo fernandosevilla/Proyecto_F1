@@ -235,14 +235,14 @@ body {
 
 /* Inicio Footer */
 .footer-container {
-    background-color: black; /* Cambia el color de fondo según tus preferencias */
-    color: white; /* Cambia el color del texto según tus preferencias */
+    background-color: black;
+    color: white;
     text-align: center;
     padding: 1.25rem;
 }
 
 #footer {
-    margin-top: 1.25rem; /* Ajusta según tus necesidades */
+    margin-top: 1.25rem;
 }
 
 .bloqueFooter {
@@ -256,35 +256,33 @@ body {
     flex: 1;
     margin: 0.625rem;
     text-align: center;
-    color: #fff; /* Cambia el color del texto según tus preferencias */
+    color: #fff;
 }
 
 .cosasFooter h4 {
-    color: #fff; /* Cambia el color del título según tus preferencias */
+    color: #fff;
 }
 
-/* Estilos generales para los iconos */
 .cosasFooter a {
-    color: #fff; /* Cambia el color de los enlaces según tus preferencias */
+    color: #fff;
     margin-right: 0.625rem;
-    font-size: 1.5em; /* Ajusta el tamaño de la fuente según tus preferencias */
-    transition: color 0.3s; /* Agrega una transición suave de color */
+    font-size: 1.5em;
+    transition: color 0.3s;
 }
 
-/* Cambia el color al hacer hover sobre los iconos */
 .cosasFooter a:hover {
-    color: var(--colorFondoMenu); /* Cambia el color al hacer hover según tus preferencias */
+    color: var(--colorFondoMenu);
 }
 
 
 .cosasFooter p {
-    font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
+    font-weight: bold;
 }
 
 .cosasFooter span {
-    font-size: 1.2em; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
-    display: block; /* Hace que el símbolo de copyright aparezca en una nueva línea */
-    margin-top: 0.313rem; /* Puedes ajustar el margen superior según tus preferencias */
+    font-size: 1.2em;
+    display: block;
+    margin-top: 0.313rem;
 }
 
 /* Fin Footer */
@@ -343,7 +341,7 @@ button:hover {
     }
 
     .opcionMenu {
-        padding: 1rem; /* Ajusta el padding para las opciones del menú */
+        padding: 1rem;
     }
     
     .bloquePilotosActuales article {
