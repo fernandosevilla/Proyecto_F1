@@ -32,17 +32,16 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: var(--fondoElementosTabla);
     font-weight: bold;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-
+tr:nth-child(even) { /* Esto es para que se aplique sobre las filas pares */
+    background-color: var(--fondoElementosTabla);
 }
 
 tr:hover {
-    background-color: #ddd;
+    background-color: var(--fondoElementosTablaHover);
 }
 
 .pos {
