@@ -66,7 +66,10 @@ function mostrarTabla() {
                             <td class="pts">0</td>
                         </tr>
                     </tbody>
-                </table>`;
+                </table>
+                <div class="centrar-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OJ56MAGFPGM?si=7dw3-i5HRWdn1XYz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>`;
             break;
         case "2023":
             tabla = `

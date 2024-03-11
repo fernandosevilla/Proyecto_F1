@@ -61,6 +61,10 @@ h3 {
     width: 10%;
 }
 
+.centrar-iframe {
+    text-align: center;
+}
+
 @media screen and (max-width: 759px) {
     #año {
         width: 60%;
