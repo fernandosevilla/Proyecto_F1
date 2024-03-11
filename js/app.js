@@ -68,6 +68,7 @@ function mostrarTabla() {
                     </tbody>
                 </table>
                 <div class="centrar-iframe">
+                    <img src="../img/pilotos/fernando-alonso-mewing.gif" id="mewing" alt="alonso" /><br/>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/OJ56MAGFPGM?si=7dw3-i5HRWdn1XYz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3708.8312994515536!2d39.10195297603665!3d21.63149648017293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3dbb6d26f1aa3%3A0xe5ae57c9164742a6!2sJeddah%20Corniche%20Circuit!5e0!3m2!1ses!2ses!4v1710157089144!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>`;
